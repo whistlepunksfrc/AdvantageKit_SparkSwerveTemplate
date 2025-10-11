@@ -38,4 +38,11 @@ public class ShooterSubsystem extends SubsystemBase {
   public Command stopCommand() {
     return Commands.runOnce(() -> shooterMotor.set(0), this); // stops the shooter motor
   }
+
+  public Command autoShoot() {
+    return Commands.sequence(
+        Commands.runOnce(() -> shooterMotor.set(0.4), this), // Start shooting at 40% speed
+        Commands.waitSeconds(3), // Wait for 3 seconds
+        Commands.runOnce(() -> shooterMotor.set(0), this));
+  }
 }
