@@ -32,18 +32,22 @@ public final class Constants {
     public static final int kNeo = 80;
     // public static final int kNeo550 = 20;
   }
+
   public static final class VisionConstants {
     // Camera 1 constants
     public static final String kCameraName1 = "shootcamera";
-    public static final double kCamera1X = Units.inchesToMeters(20.75);  //set camera postion from center of robot.  x is forward, y is left, z is up
+    public static final double kCamera1X =
+        Units.inchesToMeters(
+            20.75); // set camera postion from center of robot.  x is forward, y is left, z is up
     public static final double kCamera1Y = Units.inchesToMeters(104.0);
-    public static final double kCamera1Z = Units.inchesToMeters(24.0); //height of camera
-       
-    public static final double kCamera1Pitch = Units.degreesToRadians(0); //degrees
-    public static final double kCamera1Yaw = Units.degreesToRadians(0); //degrees
-    public static final double kCamera1Roll = Units.degreesToRadians(0.0); //degrees
+    public static final double kCamera1Z = Units.inchesToMeters(24.0); // height of camera
+
+    public static final double kCamera1Pitch = Units.degreesToRadians(0); // degrees
+    public static final double kCamera1Yaw = Units.degreesToRadians(0); // degrees
+    public static final double kCamera1Roll = Units.degreesToRadians(0.0); // degrees
   }
-public static final class OdometryStdDevs {
+
+  public static final class OdometryStdDevs {
     public static final double kStateX = 0.05;
     public static final double kStateY = 0.05;
     public static final double kStateTheta = Units.degreesToRadians(5);
@@ -52,6 +56,7 @@ public static final class OdometryStdDevs {
     public static final double kVisionY = 0.05;
     public static final double kVisionTheta = Units.degreesToRadians(5);
   }
+
   public static final Mode simMode = Mode.SIM;
   public static final Mode currentMode = RobotBase.isReal() ? Mode.REAL : simMode;
 
