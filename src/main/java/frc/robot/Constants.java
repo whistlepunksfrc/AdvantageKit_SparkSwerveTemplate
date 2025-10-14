@@ -39,8 +39,8 @@ public final class Constants {
     public static final double kCamera1Y = Units.inchesToMeters(104.0);
     public static final double kCamera1Z = Units.inchesToMeters(24.0); //height of camera
        
-    public static final double kCamera1Pitch = Units.degreesToRadians(-12.8); //degrees
-    public static final double kCamera1Yaw = Units.degreesToRadians(180.0); //degrees
+    public static final double kCamera1Pitch = Units.degreesToRadians(0); //degrees
+    public static final double kCamera1Yaw = Units.degreesToRadians(0); //degrees
     public static final double kCamera1Roll = Units.degreesToRadians(0.0); //degrees
   }
 public static final class OdometryStdDevs {
