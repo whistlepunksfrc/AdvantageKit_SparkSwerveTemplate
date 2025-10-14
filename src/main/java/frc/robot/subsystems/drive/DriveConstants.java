@@ -41,7 +41,6 @@ public class DriveConstants {
   public static final Rotation2d backRightZeroRotation = new Rotation2d(0.0);
 
   // Device CAN IDs
-  // Device CAN IDs
   public static final int pigeonCanId = 9;
 
   public static final int frontLeftDriveCanId = 2;
@@ -99,7 +98,7 @@ public class DriveConstants {
   // PathPlanner configuration
   public static final double robotMassKg = 74.088;
   public static final double robotMOI = 6.883;
-  public static final double wheelCOF = 1.2;
+  public static final double wheelCOF = 1.4;
   public static final RobotConfig ppConfig =
       new RobotConfig(
           robotMassKg,
@@ -112,4 +111,5 @@ public class DriveConstants {
               driveMotorCurrentLimit,
               1),
           moduleTranslations);
+          
 }
