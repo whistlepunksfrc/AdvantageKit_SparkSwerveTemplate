@@ -1,0 +1,73 @@
+{
+  "version": "2025.0",
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "path",
+          "data": {
+            "pathName": "CenterStartShoot"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "autoshoot"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "FirstReload"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 1.0
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "ScoreSecondCoral"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "autoshoot"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "ThirdReload"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 1.0
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "ScoreThird"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "autoshoot"
+          }
+        }
+      ]
+    }
+  },
+  "resetOdom": true,
+  "folder": null,
+  "choreoAuto": false
+}

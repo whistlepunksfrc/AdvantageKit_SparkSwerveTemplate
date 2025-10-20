@@ -28,7 +28,7 @@ public class ShooterSubsystem extends SubsystemBase {
   }
 
   public Command outtake() {
-    return Commands.runOnce(() -> shooterMotor.set(.6), this); // .6 is the speed of the outtake
+    return Commands.runOnce(() -> shooterMotor.set(.4), this); // .6 is the speed of the outtake
   }
 
   public Command backspin() {
@@ -42,7 +42,7 @@ public class ShooterSubsystem extends SubsystemBase {
   public Command autoShoot() {
     return Commands.sequence(
         Commands.runOnce(() -> shooterMotor.set(0.4), this), // Start shooting at 40% speed
-        Commands.waitSeconds(3), // Wait for 3 seconds
+        Commands.waitSeconds(1.0), // Wait for 1.0 seconds
         Commands.runOnce(() -> shooterMotor.set(0), this));
   }
 }
