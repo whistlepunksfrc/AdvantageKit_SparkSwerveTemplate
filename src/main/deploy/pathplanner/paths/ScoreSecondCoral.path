@@ -9,7 +9,7 @@
       "prevControl": null,
       "nextControl": {
         "x": 1.6552840909090905,
-        "y": 0.9387926136363629
+        "y": 0.938792613636363
       },
       "isLocked": false,
       "linkedName": "EndFirstReload"
