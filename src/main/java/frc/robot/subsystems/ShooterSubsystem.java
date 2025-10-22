@@ -41,8 +41,8 @@ public class ShooterSubsystem extends SubsystemBase {
 
   public Command autoShoot() {
     return Commands.sequence(
-        Commands.runOnce(() -> shooterMotor.set(0.4), this), // Start shooting at 40% speed
-        Commands.waitSeconds(1.0), // Wait for 1.0 seconds
+        Commands.runOnce(() -> shooterMotor.set(0.5), this), // Start shooting at 50% speed
+        Commands.waitSeconds(0.8), // Wait for 1.0 seconds
         Commands.runOnce(() -> shooterMotor.set(0), this));
   }
 }
