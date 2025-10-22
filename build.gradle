@@ -48,7 +48,8 @@ deploy {
                     directory = '/home/lvuser/deploy'
                     // Change to true to delete files on roboRIO that no
                     // longer exist in deploy directory on roboRIO
-                    deleteOldFiles = false
+                    deleteOldFiles = true  // changed from false to true KLJ 10-21-2025
+                    
                 }
             }
         }
